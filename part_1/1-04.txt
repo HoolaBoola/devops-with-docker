@@ -1,0 +1,9 @@
+sudo docker run -d --name ll devopsdockeruh/exec_bash_exercise
+sudo docker exec -it ll bash > 1-4.tx
+root@c7d4140feba3:/usr/app# tail -f ./logs.txt
+Mon, 30 Dec 2019 19:16:36 GMT
+Secret message is:
+"Docker is easy"
+^C
+root@c7d4140feba3:/usr/app# exit
+exit

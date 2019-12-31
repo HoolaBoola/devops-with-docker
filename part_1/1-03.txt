@@ -1,0 +1,4 @@
+[1G[0JGive me the password: [23Gbasici[1G[0JGive me the password: basic[28G[1G[0JGive me the password: basi[27G[1G[0JGive me the password: bas[26G[1G[0JGive me the password: ba[25G[1G[0JGive me the password: b[24G[1G[0JGive me the password: [23Gbasics
+You found the correct password. Secret message is:
+"This is the secret message"
+

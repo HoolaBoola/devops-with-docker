@@ -1,0 +1,2 @@
+sudo docker run -p 5000:5000 front-example
+sudo docker run -p 8000:8000 back-example
