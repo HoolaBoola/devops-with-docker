@@ -1,0 +1,3 @@
+The container sets up the Ubuntu environment and the Rust language with all its tools. Simply run the image and it is ready to go.
+
+https://hub.docker.com/r/hajajaim/happy-ferris
