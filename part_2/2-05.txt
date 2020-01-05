@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    environment:
+        - REDIS=redis
+    ports:
+      - 8000:8000
+
+  redis:
+    image: redis
+    restart: unless-stopped
+    

@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    environment:
+        - REDIS=redis
+        - DB_USERNAME=example
+        - DB_HOST=db
+        - DB_PASSWORD=example
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+
+  redis:
+    image: redis
+    restart: unless-stopped
+
+  db:
+    container_name: db
+    image: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=example
+      - POSTGRES_PASSWORD=example
+    
